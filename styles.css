@@ -77,4 +77,49 @@ nav ul li a:hover {
   transform: translateY(0);
 }
 
-/* Más estilos y animaciones aquí */
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  /* Estilos para el menú de hamburguesa */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 2px 0;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #3498db;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Estilos para el botón flotante en dispositivos móviles */
+  .floating-button {
+    bottom: 20px;
+    right: 20px;
+  }
+}
