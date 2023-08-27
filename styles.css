@@ -1,104 +1,25 @@
-/* Estilos generales */
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 /* ... Otros estilos ... */
 
 /* Estilos para el encabezado */
 header {
-  background-color: #009933;
+  background-color: #ff9900; /* Cambia el color de fondo del encabezado */
   color: white;
   padding: 20px 0;
   text-align: center;
   position: relative;
-}
-
-h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-nav ul li {
-  margin: 0 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #003366;
-}
-
-.menu-toggle {
-  display: none; /* Ocultar el icono del menú en dispositivos de escritorio */
-}
-
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    z-index: 1001; /* Asegurar que esté por encima del menú */
-  }
-
-  nav {
-    display: none;
-    background-color: #009933;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 1000; /* Asegurar que esté por encima del contenido */
-  }
-
-  nav.active {
-    display: block;
-  }
-
-  nav ul {
-    display: block;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .menu-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px auto;
-  }
-
-  .menu-toggle.active span {
-    background-color: #003366; /* Cambio de color en el icono al abrir el menú */
-  }
+  transition: background-color 0.3s ease; /* Agrega una transición suave */
 }
 
 /* ... Otros estilos ... */
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  /* ... Otros estilos ... */
+
+  nav {
+    /* ... Otros estilos ... */
+    transition: background-color 0.3s ease; /* Agrega una transición suave */
+  }
+
+  /* ... Otros estilos ... */
+}
