@@ -46,6 +46,11 @@ nav ul li a {
   text-align: center; /* Centrar los textos en las secciones */
 }
 
+/* Contenido centrado */
+.centered {
+  text-align: center;
+}
+
 /* Botón flotante */
 .floating-button {
   position: fixed;
