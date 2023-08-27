@@ -85,7 +85,7 @@ nav ul li a:hover {
     flex-direction: column;
     cursor: pointer;
     padding: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Transición para la animación */
     color: white; /* Color blanco para el menú de hamburguesa */
   }
 
@@ -135,6 +135,9 @@ nav ul li a:hover {
     background-color: #333; /* Color más oscuro */
     color: white; /* Texto en color blanco */
     padding: 10px;
+    position: absolute;
+    bottom: 0; /* Alinear al final de la página */
+    width: 100%; /* Ancho completo */
   }
 
   /* Alineación centrada para los textos en dispositivos móviles */
