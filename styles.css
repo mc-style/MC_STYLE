@@ -13,8 +13,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  position: relative;
-  z-index: 1;
+  position: relative; /* Agregado para corregir el problema de superposición */
+  z-index: 1; /* Agregado para corregir el problema de superposición */
 }
 
 h1 {
@@ -46,6 +46,7 @@ nav ul li a {
 .section {
   padding: 60px;
   text-align: center;
+  position: relative; /* Agregado para ajustar el encabezado gris */
 }
 
 /* Contenido centrado */
@@ -100,19 +101,10 @@ nav ul li a:hover {
     height: 3px;
     background-color: #fff; /* Color blanco para las barras del menú */
     margin: 2px 0;
-    transition: transform 0.3s ease;
   }
 
-  .menu-toggle.active span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+  .menu-toggle span:nth-child(2) {
+    margin: 2px 0;
   }
 
   nav ul {
@@ -123,16 +115,100 @@ nav ul li a:hover {
     top: 60px;
     left: 0;
     width: 100%;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    opacity: 0;
-    transform: translateY(-10px);
   }
 
   nav ul.active {
     display: flex;
-    opacity: 1;
-    transform: translateY(0);
   }
 
-  /* Resto de estilos para dispositivos móviles */
+  nav ul li {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Estilos para el botón flotante en dispositivos móviles */
+  .floating-button {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  /* Estilos para el encabezado gris en dispositivos móviles */
+  .gray-header {
+    background-color: #333; /* Color más oscuro */
+    color: white; /* Texto en color blanco */
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Alineación centrada para los textos en dispositivos móviles */
+  .centered-text {
+    text-align: center;
+  }
+
+  /* Recuadro para la descripción sobre nosotros en versión móvil */
+  .about-info {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  /* Estilo para la imagen del logotipo en versión móvil */
+  .logo-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Estilos para el encabezado gris en versión de escritorio */
+@media screen and (min-width: 769px) {
+  .gray-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 0; /* Mover el encabezado gris detrás del contenido */
+  }
+
+  /* Alineación centrada para los textos en la versión de escritorio */
+  .centered-text {
+    text-align: center;
+  }
+
+  /* Recuadro para la descripción sobre nosotros en versión de escritorio */
+  .about-info {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 800px; /* Limitar el ancho para evitar alargamiento */
+  }
+
+  /* Estilo para la imagen del logotipo en versión de escritorio */
+  .logo-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Estilos para los textos de abajo */
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #333;
 }
