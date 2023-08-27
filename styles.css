@@ -155,8 +155,8 @@ nav ul li a:hover {
 /* Estilos para el encabezado gris en versión de escritorio */
 @media screen and (min-width: 769px) {
   .gray-header {
-    background-color: #888; /* Color más oscuro */
-    color: #333; /* Texto en color oscuro */
+    background-color: #333; /* Color más oscuro */
+    color: white; /* Texto en color blanco */
     text-align: center;
     padding: 10px;
     position: absolute;
