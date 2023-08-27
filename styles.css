@@ -144,8 +144,10 @@ nav ul li a:hover {
 
   /* Recuadro para la descripción sobre nosotros en dispositivos móviles */
   .about-info {
-    border: 2px solid #e74c3c; /* Color de borde */
+    background-color: #f2f2f2; /* Color de fondo */
     padding: 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
   }
 }
 
@@ -167,10 +169,12 @@ nav ul li a:hover {
 
   /* Recuadro para la descripción sobre nosotros en versión de escritorio */
   .about-info {
-    border: 2px solid #e74c3c; /* Mismo color que en versión móvil */
+    background-color: #f2f2f2; /* Mismo color que en versión móvil */
     padding: 20px;
     margin: 0 auto; /* Centrar horizontalmente */
     max-width: 800px; /* Limitar el ancho para mejor legibilidad */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
   }
 }
 
