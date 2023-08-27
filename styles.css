@@ -185,8 +185,7 @@ nav ul li a:hover {
   .about-info {
     background-color: #f2f2f2;
     padding: 20px;
-    margin: 0 auto; /* Alinear al centro horizontalmente */
-    margin-top: 60px; /* Espacio desde arriba */
+    margin: 60px auto 20px; /* Espacio desde arriba, abajo y centrado horizontal */
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
