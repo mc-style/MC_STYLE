@@ -167,7 +167,7 @@ nav ul li a:hover {
 
   /* Recuadro para la descripción sobre nosotros en versión de escritorio */
   .about-info {
-    border: 2px solid #e74c3c; /* Color de borde */
+    border: 2px solid #e74c3c; /* Mismo color que en versión móvil */
     padding: 20px;
     margin: 0 auto; /* Centrar horizontalmente */
     max-width: 800px; /* Limitar el ancho para mejor legibilidad */
