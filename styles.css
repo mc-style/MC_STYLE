@@ -189,6 +189,7 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    max-width: 800px; /* Limitar el ancho para evitar alargamiento */
   }
 
   /* Estilo para la imagen del logotipo en versión de escritorio */
