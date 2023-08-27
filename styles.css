@@ -7,7 +7,7 @@ body {
 
 /* Encabezado */
 header {
-  background-color: #252850; /* Cambio de color a #252850 */
+  background-color: #252850;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -17,6 +17,7 @@ header {
 
 h1 {
   font-size: 28px;
+  color: #f39c12; /* Cambio de color del título */
 }
 
 nav ul {
@@ -43,7 +44,7 @@ nav ul li a {
 /* Sección */
 .section {
   padding: 60px;
-  text-align: center; /* Centrar los textos en las secciones */
+  text-align: center;
 }
 
 /* Contenido centrado */
