@@ -10,7 +10,7 @@ body {
 
 /* Estilos para el encabezado */
 header {
-  background-color: #003366;
+  background-color: #009933;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #FF6600;
+  color: #003366; /* Color de enlace en el hover */
 }
 
 .menu-toggle {
@@ -65,7 +65,7 @@ nav ul li a:hover {
 
   nav {
     display: none;
-    background-color: #003366;
+    background-color: #009933;
     position: absolute;
     top: 60px;
     left: 0;
