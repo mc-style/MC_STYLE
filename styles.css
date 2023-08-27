@@ -159,9 +159,9 @@ nav ul li a:hover {
     color: #333; /* Texto en color oscuro */
     text-align: center;
     padding: 10px;
-    position: relative;
-    width: 100%;
+    position: absolute;
     bottom: 0; /* Alinear al final de la página */
+    width: 100%;
   }
 
   /* Alineación centrada para los textos en la versión de escritorio */
