@@ -1,142 +1,46 @@
-/* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>MC STYLE</title>
+</head>
+<body>
+  <header>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>MC STYLE</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="sobre.html">Sobre Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
 
-/* Encabezado */
-header {
-  background-color: #252850;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 50px;
-}
+  <section id="inicio" class="section">
+    <div class="welcome">
+      <h2>Te damos la bienvenida a MC STYLE</h2>
+      <p>Tu lugar para encontrar camisetas, buzos y hoodies con tus temas favoritos.</p>
+    </div>
+  </section>
 
-h1 {
-  font-size: 28px;
-}
+  <!-- Resto del contenido de la página -->
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
+  <div class="floating-button">
+    <button onclick="abrirBotMovil()">Chat</button>
+  </div>
 
-nav ul li {
-  margin-right: 20px;
-}
+  <footer class="gray-header">
+    <p>Todos los derechos reservados © 2023 MC STYLE</p>
+  </footer>
 
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-/* Sección */
-.section {
-  padding: 60px;
-  text-align: center;
-}
-
-/* Contenido centrado */
-.centered {
-  text-align: center;
-}
-
-/* Animación de desplazamiento suave para los enlaces */
-nav ul li a {
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #e74c3c;
-}
-
-/* Animación de resaltado al pasar el mouse por encima del botón flotante */
-.floating-button button:hover {
-  background-color: #e74c3c;
-}
-
-/* Animación de aparición para el botón flotante */
-.floating-button {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.floating-button.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 768px) {
-  /* Estilos para el menú de hamburguesa */
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-  }
-
-  .menu-toggle span {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 2px 0;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    background-color: #3498db;
-    top: 60px;
-    left: 0;
-    width: 100%;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  nav ul li {
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  /* Estilos para el botón flotante en dispositivos móviles */
-  .floating-button {
-    bottom: 20px;
-    right: 20px;
-  }
-
-  /* Alineación centrada para los textos en dispositivos móviles */
-  .centered-text {
-    text-align: center;
-  }
-}
-
-/* Estilos para el encabezado gris */
-.gray-header {
-  background-color: #f2f2f2;
-  padding: 20px;
-  color: #555;
-  text-align: center;
-  font-size: 14px;
-}
-
-/* Alineación centrada para los textos en la versión de escritorio */
-@media screen and (min-width: 769px) {
-  .centered-text {
-    text-align: center;
-  }
-}
+  <script src="scripts.js"></script>
+</body>
+</html>
