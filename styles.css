@@ -10,7 +10,7 @@ header {
   background-color: #252850;
   color: white;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Cambio en la dirección de flexión */
   align-items: center;
   padding: 10px 50px;
   position: relative;
@@ -19,6 +19,7 @@ header {
 
 h1 {
   font-size: 28px;
+  margin-bottom: 10px; /* Espaciado inferior para separar del menú */
 }
 
 nav ul {
@@ -26,20 +27,8 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+  flex-direction: column; /* Cambio en la dirección de flexión */
+  align-items: center;
 }
 
 /* Sección */
