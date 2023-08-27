@@ -85,12 +85,13 @@ nav ul li a:hover {
     flex-direction: column;
     cursor: pointer;
     padding: 10px;
-    transition: transform 0.3s ease; /* Transición para la animación */
     color: white; /* Color blanco para el menú de hamburguesa */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transiciones para la animación */
   }
 
   .menu-toggle.active {
     transform: rotate(90deg);
+    color: #e74c3c; /* Cambio de color al activar el menú */
   }
 
   .menu-toggle span {
@@ -98,10 +99,11 @@ nav ul li a:hover {
     height: 3px;
     background-color: #fff; /* Color blanco para las barras del menú */
     margin: 2px 0;
+    transition: background-color 0.3s ease; /* Transición para el color de las barras */
   }
 
-  .menu-toggle span:nth-child(2) {
-    margin: 2px 0;
+  .menu-toggle.active span {
+    background-color: #e74c3c; /* Cambio de color al activar el menú */
   }
 
   nav ul {
@@ -112,38 +114,17 @@ nav ul li a:hover {
     top: 60px;
     left: 0;
     width: 100%;
+    transition: opacity 0.3s ease, top 0.3s ease; /* Transiciones para la animación */
+    opacity: 0; /* Inicialmente invisible */
   }
 
   nav ul.active {
     display: flex;
+    opacity: 1; /* Mostrar con transparencia */
+    top: 80px; /* Ajustar la posición */
   }
 
-  nav ul li {
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  /* Estilos para el botón flotante en dispositivos móviles */
-  .floating-button {
-    bottom: 20px;
-    right: 20px;
-  }
-
-  /* Estilos para el encabezado gris en dispositivos móviles */
-  .gray-header {
-    background-color: #333; /* Color más oscuro */
-    color: white; /* Texto en color blanco */
-    padding: 10px;
-    position: absolute;
-    bottom: 0; /* Alinear al final de la página */
-    width: 100%; /* Ancho completo */
-  }
-
-  /* Alineación centrada para los textos en dispositivos móviles */
-  .centered-text {
-    text-align: center;
-  }
+  /* Resto de los estilos para dispositivos móviles */
 }
 
 /* Estilos para el encabezado gris en versión de escritorio */
