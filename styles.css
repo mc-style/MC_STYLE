@@ -8,6 +8,14 @@ body {
 
 /* ... Otros estilos ... */
 
+/* Encabezado */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
 /* Animación de enlaces */
 nav a {
   color: white;
@@ -36,3 +44,10 @@ nav a:hover {
 .button:hover {
   background-color: #ff9900;
 }
+
+/* Estilos para los encabezados */
+h1, h2 {
+  color: #333; /* Cambiado a un color más oscuro para contrastar con el fondo del encabezado */
+}
+
+/* ... Otros estilos ... */
