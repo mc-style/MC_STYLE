@@ -81,18 +81,84 @@ nav ul li a:hover {
 
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
-  /* ... (otros estilos) ... */
+  /* Estilos para el menú de hamburguesa en dispositivos móviles */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    color: white; /* Color blanco para el menú de hamburguesa */
+  }
+
+  .menu-toggle.active {
+    transform: rotate(90deg);
+  }
+
+  .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* Color blanco para las barras del menú */
+    margin: 2px 0;
+  }
+
+  .menu-toggle span:nth-child(2) {
+    margin: 2px 0;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #252850;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Estilos para el botón flotante en dispositivos móviles */
+  .floating-button {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  /* Estilos para el encabezado gris en dispositivos móviles */
+  .gray-header {
+    background-color: #333; /* Color más oscuro */
+    color: white; /* Texto en color blanco */
+    padding: 10px;
+  }
+
+  /* Alineación centrada para los textos en dispositivos móviles */
+  .centered-text {
+    text-align: center;
+  }
 
   /* Recuadro para la descripción sobre nosotros en versión móvil */
   .about-info {
-    /* ... (otros estilos) ... */
-    border: 1px solid #ccc; /* Agregar borde de 1px sólido */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar sombreado */
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
   }
 
   /* Estilo para la imagen del logotipo en versión móvil */
   .logo-image {
-    /* ... (otros estilos) ... */
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -100,18 +166,36 @@ nav ul li a:hover {
 
 /* Estilos para el encabezado gris en versión de escritorio */
 @media screen and (min-width: 769px) {
-  /* ... (otros estilos) ... */
+  .gray-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 0; /* Mover el encabezado gris detrás del contenido */
+  }
+
+  /* Alineación centrada para los textos en la versión de escritorio */
+  .centered-text {
+    text-align: center;
+  }
 
   /* Recuadro para la descripción sobre nosotros en versión de escritorio */
   .about-info {
-    /* ... (otros estilos) ... */
-    border: 1px solid #ccc; /* Agregar borde de 1px sólido */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar sombreado */
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
   }
 
   /* Estilo para la imagen del logotipo en versión de escritorio */
   .logo-image {
-    /* ... (otros estilos) ... */
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
