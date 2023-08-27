@@ -6,21 +6,27 @@ menuToggle.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
 
+// Función para abrir el menú de hamburguesa en dispositivos móviles
+function abrirMenu() {
+  nav.classList.add("active");
+}
+
+// Función para abrir el bot de chat en dispositivos móviles
+function abrirBotMovil() {
+  alert("¡Hola! ¿En qué puedo ayudarte?");
+}
+
 // Botón flotante
 const chatButton = document.createElement("div");
 chatButton.className = "chat-button";
 document.body.appendChild(chatButton);
 
-function esDispositivoMovil() {
-  return window.innerWidth <= 768;
-}
-
-function abrirBotMovil() {
-  alert("¡Hola! ¿En qué puedo ayudarte?");
-}
-
-chatButton.addEventListener("click", function () {
+chatButton.addEventListener("click", () => {
   if (esDispositivoMovil()) {
     abrirBotMovil();
   }
 });
+
+function esDispositivoMovil() {
+  return window.innerWidth <= 768;
+}
