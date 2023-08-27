@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
-  <title>MC STYLE - Contacto</title>
+  <title>Productos - MC STYLE</title>
 </head>
 <body>
   <header>
@@ -16,31 +16,42 @@
       <span></span>
       <span></span>
     </div>
-    <h1 class="custom-title">MC STYLE</h1>
+    <h1 style="font-family: 'ZCOOL XiaoWei', sans-serif;">MC STYLE</h1>
     <nav>
       <ul>
         <li><a href="index.html#inicio">Inicio</a></li>
         <li><a href="productos.html">Productos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
         <li><a href="sobre.html">Sobre Nosotros</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Contenido de la página de contacto -->
-  <div class="content contact-info centered-text">
-    <h2>Contacto</h2>
-    <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/573238552871">+57 3238552871</a></p>
-    <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/mcbclothing/">@mcbclothing</a></p>
-  </div>
+  <section id="inicio" class="section">
+    <div class="welcome">
+      <h2>¡Descubre nuestras últimas colecciones y sigue conectado con nosotros en redes sociales!</h2>
+    </div>
+  </section>
 
-  <div class="floating-button">
-    <button onclick="abrirBotMovil()">Chat</button>
-  </div>
+  <!-- Resto del contenido de la página -->
+
+  <section class="content">
+    <!-- Contenido de la página de productos -->
+    <div class="contact-info">
+      <h3>Contáctanos</h3>
+      <p>Puedes comunicarte con nosotros a través de WhatsApp e Instagram:</p>
+      <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +123456789</p>
+      <p><i class="fab fa-instagram"></i> <strong>Instagram:</strong> @mcstyle_ropa</p>
+    </div>
+  </section>
 
   <footer class="gray-header">
     <p>Todos los derechos reservados © 2023 MC STYLE</p>
   </footer>
+
+  <div class="floating-button">
+    <button onclick="abrirBotMovil()">Chat</button>
+  </div>
 
   <script src="scripts.js"></script>
 </body>
