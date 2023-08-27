@@ -13,22 +13,11 @@ function abrirMenu() {
   nav.classList.toggle("active");
 }
 
-// Función para abrir el bot de chat en dispositivos móviles
-function abrirBotMovil() {
-  alert("¡Hola! ¿En qué puedo ayudarte?");
-}
-
-// Botón flotante
-const chatButton = document.createElement("div");
-chatButton.className = "chat-button";
-document.body.appendChild(chatButton);
-
-chatButton.addEventListener("click", () => {
+// Cerrar el menú al hacer clic en un enlace
+nav.addEventListener("click", () => {
   if (esDispositivoMovil()) {
-    abrirBotMovil();
+    abrirMenu();
   }
 });
 
-function esDispositivoMovil() {
-  return window.innerWidth <= 768;
-}
+// ... otros códigos ...
