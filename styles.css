@@ -10,7 +10,7 @@ header {
   background-color: #252850;
   color: white;
   display: flex;
-  flex-direction: column; /* Cambio en la dirección de flexión */
+  justify-content: space-between; /* Cambio en la distribución */
   align-items: center;
   padding: 10px 50px;
   position: relative;
@@ -19,7 +19,6 @@ header {
 
 h1 {
   font-size: 28px;
-  margin-bottom: 10px; /* Espaciado inferior para separar del menú */
 }
 
 nav ul {
@@ -27,7 +26,6 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center; /* Alineación horizontal de los menús */
 }
 
 nav ul li {
@@ -42,13 +40,6 @@ nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  border-bottom: 2px solid transparent; /* Borde inferior transparente por defecto */
-  transition: border-color 0.3s ease; /* Transición para el color del borde */
-}
-
-nav ul li a:hover {
-  border-color: #e74c3c; /* Color del borde al pasar el mouse */
-  color: #e74c3c; /* Cambio de color al pasar el mouse */
 }
 
 /* Sección */
