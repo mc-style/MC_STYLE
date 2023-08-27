@@ -8,86 +8,88 @@ body {
 
 /* ... Otros estilos ... */
 
-/* Estilos para los encabezados */
-h1 {
-  color: #003366;
-  font-size: 36px;
-  margin-bottom: 20px;
+/* Estilos para el encabezado */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px 0;
   text-align: center;
+  position: relative;
 }
 
-h2 {
-  color: #333333;
-  font-size: 24px;
-  text-align: center;
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #FF6600;
+}
+
+.menu-toggle {
+  display: none; /* Ocultar el icono del menú en dispositivos de escritorio */
 }
 
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
-  /* ... Otros estilos para dispositivos móviles ... */
-}
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
 
-/* Estilos para el botón flotante */
-.chat-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #FF6600;
-  color: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-  z-index: 1000;
-}
+  nav {
+    display: none;
+    background-color: #003366;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
 
-.chat-button:hover {
-  background-color: #FF9900;
-}
+  nav.active {
+    display: block;
+  }
 
-/* Estilos para la sección de contenido */
-.content {
-  padding: 40px;
-  background-color: #F5F5F5;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
+  nav ul {
+    display: block;
+  }
 
-.content h2 {
-  margin-bottom: 15px;
-}
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
 
-.content p {
-  margin-bottom: 20px;
-}
-
-.button {
-  display: inline-block;
-  background-color: #FF6600;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #FF9900;
-}
-
-/* Estilos para el pie de página */
-footer {
-  text-align: center;
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #333;
-  color: white;
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+  }
 }
 
 /* ... Otros estilos ... */
