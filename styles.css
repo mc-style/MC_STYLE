@@ -79,17 +79,28 @@ nav ul li a:hover {
 
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
-  /* Estilos para el menú de hamburguesa */
+  /* Estilos para el menú de hamburguesa en dispositivos móviles */
   .menu-toggle {
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    color: white; /* Color blanco para el menú de hamburguesa */
+  }
+
+  .menu-toggle.active {
+    transform: rotate(90deg);
   }
 
   .menu-toggle span {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: #fff; /* Color blanco para las barras del menú */
+    margin: 2px 0;
+  }
+
+  .menu-toggle span:nth-child(2) {
     margin: 2px 0;
   }
 
@@ -97,7 +108,7 @@ nav ul li a:hover {
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: #3498db;
+    background-color: #252850;
     top: 60px;
     left: 0;
     width: 100%;
@@ -118,25 +129,21 @@ nav ul li a:hover {
     bottom: 20px;
     right: 20px;
   }
-
-  /* Alineación centrada para los textos en dispositivos móviles */
-  .centered-text {
-    text-align: center;
-  }
 }
 
 /* Estilos para el encabezado gris */
 .gray-header {
-  background-color: #f2f2f2;
-  padding: 20px;
-  color: #555;
+  background-color: #888; /* Color más oscuro */
+  color: #333;
   text-align: center;
-  font-size: 14px;
+  padding: 10px;
+  position: relative;
+  width: 100%;
 }
 
-/* Alineación centrada para los textos en la versión de escritorio */
-@media screen and (min-width: 769px) {
-  .centered-text {
-    text-align: center;
-  }
+/* Estilos para los textos de abajo */
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #333;
 }
