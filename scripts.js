@@ -1,9 +1,11 @@
 // Menú hamburguesa
-const menuToggle = document.querySelector(".menu-toggle");
+const menuToggles = document.querySelectorAll(".menu-toggle");
 const nav = document.querySelector("nav ul");
 
-menuToggle.addEventListener("click", () => {
-  nav.classList.toggle("active");
+menuToggles.forEach((menuToggle) => {
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
 });
 
 // Función para abrir el menú de hamburguesa en dispositivos móviles
