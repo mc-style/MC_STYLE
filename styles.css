@@ -43,11 +43,7 @@ nav ul li a {
 /* Sección */
 .section {
   padding: 60px;
-}
-
-/* Contenido centrado */
-.centered {
-  text-align: center;
+  text-align: center; /* Centrar los textos en las secciones */
 }
 
 /* Botón flotante */
