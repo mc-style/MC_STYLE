@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #003366; /* Color de enlace en el hover */
+  color: #003366;
 }
 
 .menu-toggle {
@@ -61,6 +61,7 @@ nav ul li a:hover {
     top: 10px;
     right: 10px;
     cursor: pointer;
+    z-index: 1001; /* Asegurar que esté por encima del menú */
   }
 
   nav {
@@ -71,6 +72,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     text-align: center;
+    z-index: 1000; /* Asegurar que esté por encima del contenido */
   }
 
   nav.active {
