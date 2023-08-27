@@ -85,13 +85,11 @@ nav ul li a:hover {
     flex-direction: column;
     cursor: pointer;
     padding: 10px;
+    transition: transform 0.3s ease;
   }
 
-  .menu-toggle span {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 2px 0;
+  .menu-toggle.active {
+    transform: rotate(90deg);
   }
 
   nav ul {
@@ -119,4 +117,12 @@ nav ul li a:hover {
     bottom: 20px;
     right: 20px;
   }
+}
+
+/* Estilos para el encabezado gris */
+.gray-header {
+  background-color: #ccc;
+  color: #333;
+  text-align: center;
+  padding: 10px;
 }
