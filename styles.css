@@ -137,4 +137,15 @@ nav ul li a:hover {
   color: #333;
   text-align: center;
   padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Estilos para los textos de abajo */
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #333;
 }
