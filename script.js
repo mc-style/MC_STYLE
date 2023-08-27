@@ -1,29 +1,22 @@
-// Crear el botón flotante
-var chatButton = document.createElement("div");
-chatButton.className = "chat-button";
-document.body.appendChild(chatButton);
+// Obtener elementos necesarios
+var menuToggle = document.querySelector(".menu-toggle");
+var nav = document.querySelector("nav");
 
-// Función para detectar si el dispositivo es móvil
-function esDispositivoMovil() {
-  return window.innerWidth <= 768; // Puedes ajustar este valor según tus necesidades
+// Función para abrir o cerrar el menú en dispositivos móviles
+function toggleMenu() {
+  nav.classList.toggle("active");
 }
 
-// Función para abrir el bot en dispositivos móviles
-function abrirBotMovil() {
-  alert("¡Hola! ¿En qué puedo ayudarte?");
-}
+// Event listener para el botón de hamburguesa
+menuToggle.addEventListener("click", function() {
+  toggleMenu(); // Abre o cierra el menú al hacer clic en el botón de hamburguesa
+});
 
-// Función para abrir otra ventana de chat en dispositivos de escritorio
-function abrirOtraVentana() {
-  // Implementa aquí tu lógica para abrir una ventana de chat en dispositivos de escritorio
-  alert("¡Hola! Estamos aquí para ayudarte.");
-}
-
-// Event listener para el botón flotante
-chatButton.addEventListener("click", function() {
-  if (esDispositivoMovil()) {
-    abrirBotMovil(); // Abre el bot en dispositivos móviles
-  } else {
-    abrirOtraVentana(); // Abre otra ventana de chat en dispositivos de escritorio
-  }
+// Event listener para cerrar el menú al hacer clic en un enlace
+nav.querySelectorAll("a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    if (nav.classList.contains("active") && window.innerWidth <= 768) {
+      toggleMenu(); // Cierra el menú al hacer clic en un enlace en dispositivos móviles
+    }
+  });
 });
