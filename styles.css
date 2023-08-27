@@ -10,7 +10,7 @@ header {
   background-color: #252850;
   color: white;
   display: flex;
-  justify-content: space-between; /* Cambio en la distribución */
+  justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
   position: relative;
