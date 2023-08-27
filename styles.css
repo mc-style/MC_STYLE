@@ -92,6 +92,13 @@ nav ul li a:hover {
     transform: rotate(90deg);
   }
 
+  .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #252850;
+    margin: 2px 0;
+  }
+
   nav ul {
     display: none;
     flex-direction: column;
