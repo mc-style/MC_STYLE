@@ -5,6 +5,12 @@ body {
   padding: 0;
 }
 
+/* Estilo de fuente para el título */
+h1 {
+  font-family: 'ZCOOL XiaoWei', cursive;
+  font-size: 28px;
+}
+
 /* Encabezado */
 header {
   background-color: #252850;
@@ -15,10 +21,6 @@ header {
   padding: 10px 50px;
   position: relative;
   z-index: 1;
-}
-
-h1 {
-  font-size: 28px;
 }
 
 nav ul {
