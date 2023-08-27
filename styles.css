@@ -86,6 +86,7 @@ nav ul li a:hover {
     cursor: pointer;
     padding: 10px;
     transition: transform 0.3s ease;
+    color: white; /* Color blanco para el menú de hamburguesa */
   }
 
   .menu-toggle.active {
@@ -95,7 +96,7 @@ nav ul li a:hover {
   .menu-toggle span {
     width: 25px;
     height: 3px;
-    background-color: #252850;
+    background-color: #fff; /* Color blanco para las barras del menú */
     margin: 2px 0;
   }
 
