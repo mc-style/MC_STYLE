@@ -46,8 +46,12 @@ nav a:hover {
 }
 
 /* Estilos para los encabezados */
-h1, h2 {
-  color: white; /* Cambiado a color blanco para destacar */
+h1 {
+  color: #ff6600; /* Cambiado a color naranja para destacar */
+}
+
+h2 {
+  color: #333; /* Color oscuro para contrastar con el fondo del encabezado */
 }
 
 /* ... Otros estilos ... */
