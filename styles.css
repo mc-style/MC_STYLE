@@ -74,6 +74,18 @@ footer {
   color: white;
 }
 
+/* Íconos de redes sociales */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 24px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
 /* Menú hamburguesa */
 .menu-toggle {
   display: none;
