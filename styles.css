@@ -174,10 +174,9 @@ nav ul li a:hover {
     background-color: #333;
     color: white;
     padding: 10px;
-    position: absolute;
-    bottom: 0;
+    position: relative; /* Cambiado a relative para que esté al final de la sección */
     width: 100%;
-    z-index: -1; /* Cambiado para mover el encabezado gris detrás del contenido */
+    z-index: -1;
   }
 
   /* Alineación centrada para los textos en la versión de escritorio */
