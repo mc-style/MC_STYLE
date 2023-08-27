@@ -152,6 +152,15 @@ nav ul li a:hover {
     margin-bottom: 10px;
     border: 1px solid #ccc; /* Agregar borde de 1px sólido */
   }
+
+  /* Estilo para la imagen del logotipo en versión móvil */
+  .logo-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* Estilos para el encabezado gris en versión de escritorio */
@@ -180,6 +189,15 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
     border: 1px solid #ccc; /* Agregar borde de 1px sólido */
+  }
+
+  /* Estilo para la imagen del logotipo en versión de escritorio */
+  .logo-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 }
 
