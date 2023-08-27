@@ -79,5 +79,44 @@ nav ul li a:hover {
 
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
-  /* ... Estilos anteriores para dispositivos móviles ... */
+  /* Estilos para el menú de hamburguesa en dispositivos móviles */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 2px 0;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #252850;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Estilos para el botón flotante en dispositivos móviles */
+  .floating-button {
+    bottom: 20px;
+    right: 20px;
+  }
 }
