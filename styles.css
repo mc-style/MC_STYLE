@@ -46,7 +46,6 @@ nav ul li a {
 .section {
   padding: 60px;
   text-align: center;
-  position: relative;
 }
 
 /* Contenido centrado */
@@ -89,7 +88,7 @@ nav ul li a:hover {
     cursor: pointer;
     padding: 10px;
     transition: transform 0.3s ease;
-    color: white;
+    color: white; /* Color blanco para el menú de hamburguesa */
   }
 
   .menu-toggle.active {
@@ -99,7 +98,7 @@ nav ul li a:hover {
   .menu-toggle span {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: #fff; /* Color blanco para las barras del menú */
     margin: 2px 0;
   }
 
@@ -135,8 +134,8 @@ nav ul li a:hover {
 
   /* Estilos para el encabezado gris en dispositivos móviles */
   .gray-header {
-    background-color: #333;
-    color: white;
+    background-color: #333; /* Color más oscuro */
+    color: white; /* Texto en color blanco */
     padding: 10px;
   }
 
@@ -149,12 +148,10 @@ nav ul li a:hover {
   .about-info {
     background-color: #f2f2f2;
     padding: 20px;
-    margin: 0 auto;
+    margin: 20px auto;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    top: 50%;
-    transform: translateY(-50%);
   }
 
   /* Estilo para la imagen del logotipo en versión móvil */
@@ -188,13 +185,11 @@ nav ul li a:hover {
   .about-info {
     background-color: #f2f2f2;
     padding: 20px;
-    margin: 0 auto;
+    margin: 20px auto;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     max-width: 800px;
-    top: 50%;
-    transform: translateY(-50%);
   }
 
   /* Estilo para la imagen del logotipo en versión de escritorio */
