@@ -89,15 +89,20 @@ nav ul li a:hover {
   .menu-toggle span {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: #000; /* Cambiar a negro */
     margin: 2px 0;
+    transition: background-color 0.3s ease; /* Agregar animación */
+  }
+
+  .menu-toggle.active span {
+    background-color: #fff; /* Cambiar a blanco */
   }
 
   nav ul {
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: #3498db;
+    background-color: #fff; /* Cambiar a blanco */
     top: 60px;
     left: 0;
     width: 100%;
@@ -127,9 +132,9 @@ nav ul li a:hover {
 
 /* Estilos para el encabezado gris */
 .gray-header {
-  background-color: #f2f2f2;
+  background-color: #444; /* Cambiar a un tono más oscuro */
   padding: 20px;
-  color: #555;
+  color: #fff; /* Cambiar a blanco */
   text-align: center;
   font-size: 14px;
 }
