@@ -95,6 +95,10 @@ nav ul li a:hover {
     background-color: white;
     margin: 5px auto;
   }
+
+  .menu-toggle.active span {
+    background-color: #003366; /* Cambio de color en el icono al abrir el menú */
+  }
 }
 
 /* ... Otros estilos ... */
