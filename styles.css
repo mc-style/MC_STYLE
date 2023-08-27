@@ -1,104 +1,125 @@
 /* Estilos generales */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Estilos para el encabezado */
+/* Encabezado */
 header {
-  background-color: #ff9900; /* Cambia el color de fondo del encabezado */
+  background-color: #3498db;
   color: white;
-  padding: 20px 0;
-  text-align: center;
-  position: relative;
-  transition: background-color 0.3s ease; /* Agrega una transición suave */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
 }
 
 h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-nav {
-  margin-top: 10px;
+  font-size: 28px;
 }
 
 nav ul {
-  list-style: none;
+  list-style-type: none;
+  margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 nav ul li {
-  margin: 0 20px;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
 }
 
 nav ul li a {
-  color: white;
   text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  color: white;
+  font-weight: bold;
 }
 
-nav ul li a:hover {
-  color: #003366;
+/* Sección */
+.section {
+  padding: 60px;
 }
 
+/* Contenido centrado */
+.centered {
+  text-align: center;
+}
+
+/* Botón flotante */
+.floating-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.floating-button button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+}
+
+/* Menú hamburguesa */
 .menu-toggle {
-  display: none; /* Ocultar el icono del menú en dispositivos de escritorio */
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 2px 0;
 }
 
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
   .menu-toggle {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    z-index: 1001; /* Asegurar que esté por encima del menú */
-  }
-
-  nav {
-    display: none;
-    background-color: #ff9900; /* Cambia el color de fondo del menú en dispositivos móviles */
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 1000; /* Asegurar que esté por encima del contenido */
-    transition: background-color 0.3s ease; /* Agrega una transición suave */
-  }
-
-  nav.active {
-    display: block;
+    display: flex;
   }
 
   nav ul {
-    display: block;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #3498db;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
+  nav ul.active {
+    display: flex;
   }
 
   nav ul li {
-    display: block;
-    margin: 10px 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
   }
 
-  .menu-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px auto;
-  }
-
-  .menu-toggle.active span {
-    background-color: #003366; /* Cambio de color en el icono al abrir el menú */
+  .floating-button {
+    bottom: 20px;
+    right: 20px;
   }
 }
-
-/* ... Otros estilos ... */
