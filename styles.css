@@ -19,8 +19,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  position: relative;
-  z-index: 1;
+}
+
+/* Encabezado azul */
+header h1 {
+  font-size: 28px; /* Ajusta el tamaño del título azul */
 }
 
 nav ul {
@@ -143,7 +146,7 @@ nav ul li a:hover {
     position: absolute;
     bottom: 0;
     width: 100%;
-    z-index: 1; /* Cambiado el valor de z-index para que esté sobre el contenido */
+    z-index: 1;
   }
 
   /* Alineación centrada para los textos en dispositivos móviles */
