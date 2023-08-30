@@ -19,11 +19,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-}
-
-/* Encabezado azul */
-header h1 {
-  font-size: 28px; /* Ajusta el tamaño del título azul */
+  position: relative;
+  z-index: 1;
 }
 
 nav ul {
@@ -54,11 +51,6 @@ nav ul li a {
   position: relative;
 }
 
-/* Contenido centrado */
-.centered {
-  text-align: center;
-}
-
 /* Animación de desplazamiento suave para los enlaces */
 nav ul li a {
   transition: color 0.3s ease;
@@ -66,23 +58,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #e74c3c;
-}
-
-/* Animación de resaltado al pasar el mouse por encima del botón flotante */
-.floating-button button:hover {
-  background-color: #e74c3c;
-}
-
-/* Animación de aparición para el botón flotante */
-.floating-button {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.floating-button.active {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* Estilos para dispositivos móviles */
@@ -132,12 +107,6 @@ nav ul li a:hover {
     width: 100%;
   }
 
-  /* Estilos para el botón flotante en dispositivos móviles */
-  .floating-button {
-    bottom: 20px;
-    right: 20px;
-  }
-
   /* Estilos para el encabezado gris en dispositivos móviles */
   .gray-header {
     background-color: #333;
@@ -146,7 +115,6 @@ nav ul li a:hover {
     position: absolute;
     bottom: 0;
     width: 100%;
-    z-index: 1;
   }
 
   /* Alineación centrada para los textos en dispositivos móviles */
