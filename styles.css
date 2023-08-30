@@ -143,6 +143,7 @@ nav ul li a:hover {
     position: absolute;
     bottom: 0;
     width: 100%;
+    z-index: 1; /* Cambiado el valor de z-index para que esté sobre el contenido */
   }
 
   /* Alineación centrada para los textos en dispositivos móviles */
