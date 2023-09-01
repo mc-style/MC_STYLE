@@ -114,8 +114,9 @@ nav ul li a:hover {
     padding: 10px;
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 50%; /* Cambiado a 50% para centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    width: calc(100% - 100px); /* Ancho igual al 100% menos los padding de header */
   }
 
   /* Alineación centrada para los textos en dispositivos móviles */
@@ -151,6 +152,7 @@ nav ul li a:hover {
     padding: 10px;
     position: relative; /* Cambiado a relative para que esté al final de la sección */
     width: 100%;
+    margin-left: 50px; /* Espacio izquierdo igual al padding de header */
     z-index: -1;
   }
 
