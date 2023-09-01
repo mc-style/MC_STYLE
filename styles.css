@@ -150,8 +150,8 @@ nav ul li a:hover {
     color: white;
     padding: 10px;
     position: relative;
-    width: 100%;
-    left: 0;
+    width: calc(100% - 100px); /* Ancho igual al 100% menos los padding de header */
+    margin-left: 50px; /* Espacio izquierdo igual al padding de header */
     z-index: -1;
   }
 
@@ -160,25 +160,7 @@ nav ul li a:hover {
     text-align: center;
   }
 
-  /* Recuadro para la descripción sobre nosotros en versión de escritorio */
-  .about-info {
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    max-width: 800px;
-  }
-
-  /* Estilo para la imagen del logotipo en versión de escritorio */
-  .logo-image {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+  /* Resto del código... */
 }
 
 /* Estilos para los textos de abajo */
