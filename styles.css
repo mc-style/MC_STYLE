@@ -150,8 +150,8 @@ nav ul li a:hover {
     color: white;
     padding: 10px;
     position: relative;
-    width: 100%;
-    left: 0;
+    width: calc(100% - 100px); /* Ancho igual al 100% menos los padding de header */
+    margin-left: 50px; /* Espacio izquierdo igual al padding de header */
     z-index: -1;
   }
 
