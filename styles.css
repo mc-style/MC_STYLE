@@ -114,8 +114,9 @@ nav ul li a:hover {
     padding: 10px;
     position: absolute;
     bottom: 0;
-    left: 0; /* Cambiado a 0 para que tenga el mismo ancho que el encabezado azul */
-    width: 100%;
+    left: 50%; /* Cambiado a 50% para centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    width: calc(100% - 100px); /* Ancho igual al 100% menos los padding de header */
   }
 
   /* Alineación centrada para los textos en dispositivos móviles */
