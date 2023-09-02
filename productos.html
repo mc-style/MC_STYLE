@@ -33,10 +33,17 @@
     </div>
   </section>
 
-  <!-- Sección para mostrar el catálogo PDF utilizando <embed> con dimensiones ajustadas -->
-  <section class="content centered-text">
-    <embed src="Catálogo MC STYLE.pdf" type="application/pdf" width="100%" height="1000px">
-  </section>
+  <!-- Agregar el PDF para la versión de escritorio -->
+  <div class="desktop-pdf">
+    <embed src="Catálogo MC STYLE.pdf" width="100%" height="600px" type="application/pdf">
+  </div>
+
+  <!-- Agregar el enlace de descarga para la versión móvil -->
+  <div class="mobile-pdf">
+    <a href="Catálogo MC STYLE.pdf" download>
+      <button class="download-button">Descargar Catálogo</button>
+    </a>
+  </div>
 
   <footer class="gray-header">
     <p>Todos los derechos reservados © 2023 MC STYLE</p>
