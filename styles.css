@@ -161,8 +161,8 @@ nav ul li a:hover {
   .download-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
+    background-color: #252850; /* Cambiado a color azul */
+    color: white; /* Texto en blanco */
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
@@ -220,8 +220,8 @@ nav ul li a:hover {
   .download-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
+    background-color: #252850; /* Cambiado a color azul */
+    color: white; /* Texto en blanco */
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
