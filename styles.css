@@ -113,7 +113,9 @@ nav ul li a:hover {
     color: white;
     padding: 10px 50px; /* Alineado con el encabezado azul */
     position: relative;
-    width: 100%;
+    width: 100%; /* Ancho igual al encabezado azul */
+    left: 0;
+    overflow: hidden;
   }
 
   /* Alineación centrada para los textos en dispositivos móviles */
@@ -148,8 +150,9 @@ nav ul li a:hover {
     color: white;
     padding: 10px 50px; /* Alineado con el encabezado azul */
     position: relative;
-    width: 100%; /* Ajustado para tener el mismo ancho que el encabezado azul */
-    z-index: -1;
+    width: 100%; /* Ancho igual al encabezado azul */
+    left: 0;
+    overflow: hidden;
   }
 
   /* Alineación centrada para los textos en la versión de escritorio */
