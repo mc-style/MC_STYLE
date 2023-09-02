@@ -161,5 +161,6 @@ nav ul li a:hover {
   /* Estilo para el pie de página en versión móvil */
   footer {
     padding: 10px 0; /* Agregamos espacio superior e inferior */
+    text-align: center; /* Alinea el texto al centro */
   }
 }
