@@ -5,10 +5,11 @@ body {
   padding: 0;
 }
 
-/* Estilo de fuente para el título */
+/* Estilo para el título MC STYLE */
 h1 {
   font-family: 'ZCOOL XiaoWei', cursive;
   font-size: 28px;
+  margin: 0; /* Agregamos margen cero para evitar el espacio superior */
 }
 
 /* Encabezado */
@@ -16,8 +17,7 @@ header {
   background-color: #252850;
   color: white;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: center; /* Alinea verticalmente en el centro */
   padding: 10px 50px;
   position: relative;
   z-index: 1;
