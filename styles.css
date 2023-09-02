@@ -116,7 +116,7 @@ nav ul li a:hover {
     position: absolute;
     background-color: #252850;
     top: 60px;
-    right: 0; /* Mover el menú a la derecha en dispositivos móviles */
+    left: 0;
     width: 100%;
   }
 
