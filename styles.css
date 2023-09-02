@@ -132,6 +132,16 @@ nav ul li a:hover {
     border-radius: 5px;
   }
 
+  /* Recuadro para la sección de contacto en versión móvil */
+  .contact-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
   /* Estilo para la imagen del logotipo en versión móvil */
   .logo-image {
     display: block;
@@ -160,6 +170,17 @@ nav ul li a:hover {
 
   /* Recuadro para la descripción sobre nosotros en versión de escritorio */
   .about-info {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 800px;
+  }
+
+  /* Recuadro para la sección de contacto en versión de escritorio */
+  .contact-box {
     background-color: #f2f2f2;
     padding: 20px;
     margin: 20px auto;
