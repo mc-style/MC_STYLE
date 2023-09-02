@@ -17,7 +17,8 @@ header {
   background-color: #252850;
   color: white;
   display: flex;
-  align-items: center; /* Alinea verticalmente en el centro */
+  justify-content: space-between; /* Alinea los elementos a los lados */
+  align-items: center;
   padding: 10px 50px;
   position: relative;
   z-index: 1;
@@ -144,21 +145,29 @@ nav ul li a:hover {
 
 /* Estilos para el encabezado gris en versión de escritorio */
 @media screen and (min-width: 769px) {
+  header {
+    padding: 10px 100px; /* Aumenta el espacio en el encabezado */
+  }
+
+  /* Cambia la alineación del título a la izquierda en la versión de escritorio */
+  h1 {
+    text-align: left;
+  }
+
+  /* Restaura la alineación a la derecha para los menús en la versión de escritorio */
+  nav ul {
+    justify-content: flex-end;
+  }
+
   .gray-header {
     background-color: #333;
     color: white;
-    padding: 10px 50px; /* Alineado con el encabezado azul */
+    padding: 10px 100px; /* Alineado con el encabezado azul */
     position: relative;
     left: 0;
     overflow: hidden;
   }
 
-  /* Alineación centrada para los textos en la versión de escritorio */
-  .centered-text {
-    text-align: center;
-  }
-
-  /* Recuadro para la descripción sobre nosotros en versión de escritorio */
   .about-info {
     background-color: #f2f2f2;
     padding: 20px;
@@ -169,7 +178,6 @@ nav ul li a:hover {
     max-width: 800px;
   }
 
-  /* Estilo para la imagen del logotipo en versión de escritorio */
   .logo-image {
     display: block;
     margin: 20px auto;
