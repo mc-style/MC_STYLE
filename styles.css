@@ -113,7 +113,6 @@ nav ul li a:hover {
     color: white;
     padding: 10px 50px; /* Alineado con el encabezado azul */
     position: relative;
-    width: 100%; /* Ancho igual al encabezado azul */
     left: 0;
     overflow: hidden;
   }
@@ -150,7 +149,6 @@ nav ul li a:hover {
     color: white;
     padding: 10px 50px; /* Alineado con el encabezado azul */
     position: relative;
-    width: 100%; /* Ancho igual al encabezado azul */
     left: 0;
     overflow: hidden;
   }
