@@ -156,6 +156,21 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+  /* Estilo para el botón de descarga en versión móvil */
+  .download-button {
+    background-color: #252850;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .download-button:hover {
+    background-color: #e74c3c;
+  }
 }
 
 /* Estilos para el encabezado gris en versión de escritorio */
