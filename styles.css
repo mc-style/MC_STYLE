@@ -31,7 +31,7 @@ header {
   }
   
   header {
-    padding: 10px 150px; /* Aumenta el espacio en el encabezado de la versión de escritorio */
+    padding: 10px 100px; /* Aumenta el espacio en el encabezado de la versión de escritorio */
   }
 
   /* Alineación a la derecha para los menús en la versión de escritorio */
@@ -66,6 +66,12 @@ nav ul li a {
   padding: 60px;
   text-align: center;
   position: relative;
+}
+
+/* Alineación centrada para los textos en la sección Contacto y Sobre Nosotros */
+.contact-box p,
+.about-info p {
+  text-align: center;
 }
 
 /* Animación de desplazamiento suave para los enlaces */
@@ -162,13 +168,13 @@ nav ul li a:hover {
 /* Estilos para el encabezado gris en versión de escritorio */
 @media screen and (min-width: 769px) {
   header {
-    padding: 10px 150px; /* Aumenta el espacio en el encabezado de la versión de escritorio */
+    padding: 10px 100px; /* Aumenta el espacio en el encabezado de la versión de escritorio */
   }
 
   .gray-header {
     background-color: #333;
     color: white;
-    padding: 10px 150px; /* Alineado con el encabezado azul */
+    padding: 10px 100px; /* Alineado con el encabezado azul */
     position: relative;
     left: 0;
     overflow: hidden;
