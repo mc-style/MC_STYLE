@@ -111,11 +111,10 @@ nav ul li a:hover {
   .gray-header {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 10px 50px; /* Alineado con el encabezado azul */
     position: absolute;
     bottom: 0;
-    width: calc(100% - 100px); /* Ancho igual al 100% menos los padding de header */
-    left: 50px; /* Espacio izquierdo igual al padding de header */
+    width: 100%;
   }
 
   /* Alineación centrada para los textos en dispositivos móviles */
@@ -148,10 +147,9 @@ nav ul li a:hover {
   .gray-header {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 10px 50px; /* Alineado con el encabezado azul */
     position: relative;
-    width: calc(100% - 100px); /* Ancho igual al 100% menos los padding de header */
-    margin-left: 50px; /* Espacio izquierdo igual al padding de header */
+    width: 100%; /* Cambiado a 100% para que tenga el mismo ancho que el encabezado azul */
     z-index: -1;
   }
 
