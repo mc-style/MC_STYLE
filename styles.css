@@ -156,10 +156,6 @@ nav ul li a:hover {
 
 /* Estilos para el encabezado gris en versión de escritorio */
 @media screen and (min-width: 769px) {
-  header {
-    padding: 20px 100px; /* Aumenta el espacio en el encabezado de la versión de escritorio */
-  }
-
   .gray-header {
     background-color: #333;
     color: white;
