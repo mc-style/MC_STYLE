@@ -142,6 +142,12 @@ nav ul li a:hover {
     border-radius: 5px;
   }
 
+  /* Estilo para el texto en la sección de contacto en versión móvil */
+  .contact-text {
+    max-width: 600px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto;
+  }
+
   /* Estilo para la imagen del logotipo en versión móvil */
   .logo-image {
     display: block;
@@ -187,7 +193,7 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    max-width: 800px;
+    max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
   }
 
   /* Estilo para la imagen del logotipo en versión de escritorio */
