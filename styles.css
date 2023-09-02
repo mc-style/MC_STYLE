@@ -114,8 +114,8 @@ nav ul li a:hover {
     padding: 10px;
     position: absolute;
     bottom: 0;
-    width: 100%;
-    left: 0;
+    width: calc(100% - 100px); /* Ancho igual al 100% menos los padding de header */
+    left: 50px; /* Espacio izquierdo igual al padding de header */
   }
 
   /* Alineación centrada para los textos en dispositivos móviles */
