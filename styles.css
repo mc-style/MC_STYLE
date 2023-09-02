@@ -163,38 +163,3 @@ nav ul li a:hover {
     padding: 10px 0; /* Agregamos espacio superior e inferior */
   }
 }
-
-/* Estilos para el encabezado gris en versión de escritorio */
-@media screen and (min-width: 769px) {
-  .gray-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 100px; /* Alineado con el encabezado azul */
-    position: relative;
-    left: 0;
-    overflow: hidden;
-  }
-
-  .about-info {
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    max-width: 800px;
-  }
-
-  .logo-image {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Estilo para el pie de página en versión de escritorio */
-  footer {
-    padding: 10px 0; /* Agregamos espacio superior e inferior */
-  }
-}
