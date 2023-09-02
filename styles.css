@@ -156,6 +156,17 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+  /* Estilo para el botón de descarga en versión móvil */
+  .download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
 }
 
 /* Estilos para el encabezado gris en versión de escritorio */
@@ -203,6 +214,17 @@ nav ul li a:hover {
     max-width: 100%;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilo para el botón de descarga en versión de escritorio */
+  .download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
   }
 }
 
