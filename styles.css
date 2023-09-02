@@ -31,7 +31,12 @@ header {
   }
   
   header {
-    padding: 10px 100px; /* Aumenta el espacio en el encabezado de la versión de escritorio */
+    padding: 10px 150px; /* Aumenta el espacio en el encabezado de la versión de escritorio */
+  }
+
+  /* Alineación a la derecha para los menús en la versión de escritorio */
+  nav ul {
+    justify-content: flex-end;
   }
 }
 
@@ -105,7 +110,7 @@ nav ul li a:hover {
     position: absolute;
     background-color: #252850;
     top: 60px;
-    left: 0;
+    right: 0; /* Mover el menú a la derecha en dispositivos móviles */
     width: 100%;
   }
 
@@ -157,23 +162,13 @@ nav ul li a:hover {
 /* Estilos para el encabezado gris en versión de escritorio */
 @media screen and (min-width: 769px) {
   header {
-    padding: 10px 100px; /* Aumenta el espacio en el encabezado de la versión de escritorio */
-  }
-
-  /* Cambia la alineación del título a la izquierda en la versión de escritorio */
-  h1 {
-    text-align: left;
-  }
-
-  /* Restaura la alineación a la derecha para los menús en la versión de escritorio */
-  nav ul {
-    justify-content: flex-end;
+    padding: 10px 150px; /* Aumenta el espacio en el encabezado de la versión de escritorio */
   }
 
   .gray-header {
     background-color: #333;
     color: white;
-    padding: 10px 100px; /* Alineado con el encabezado azul */
+    padding: 10px 150px; /* Alineado con el encabezado azul */
     position: relative;
     left: 0;
     overflow: hidden;
