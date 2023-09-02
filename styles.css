@@ -5,12 +5,10 @@ body {
   padding: 0;
 }
 
-/* Estilo para el título MC STYLE */
+/* Estilo de fuente para el título */
 h1 {
   font-family: 'ZCOOL XiaoWei', cursive;
   font-size: 28px;
-  margin: 0; /* Agregamos margen cero para evitar el espacio superior */
-  text-align: left; /* Mueve el título a la izquierda en todas las versiones */
 }
 
 /* Encabezado */
@@ -18,25 +16,18 @@ header {
   background-color: #252850;
   color: white;
   display: flex;
-  justify-content: space-between; /* Alinea los elementos a los lados */
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 100px; /* Aumenta el espacio en el encabezado de la versión de escritorio */
+  padding: 10px 50px;
   position: relative;
   z-index: 1;
 }
 
-/* Añadir un espacio entre el título y los menús en la versión de escritorio */
-header h1 {
-  margin-right: 20px;
-}
-
-/* Alineación a la derecha para los menús en la versión de escritorio */
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end; /* Alinea el menú a la derecha en todas las versiones */
 }
 
 nav ul li {
@@ -58,14 +49,6 @@ nav ul li a {
   padding: 60px;
   text-align: center;
   position: relative;
-}
-
-/* Alineación centrada para los títulos y textos en la sección Contacto y Sobre Nosotros en todas las versiones */
-.contact-box h3,
-.about-info h2,
-.contact-box p,
-.about-info p {
-  text-align: center;
 }
 
 /* Animación de desplazamiento suave para los enlaces */
@@ -128,7 +111,7 @@ nav ul li a:hover {
   .gray-header {
     background-color: #333;
     color: white;
-    padding: 10px 100px; /* Alineado con el encabezado azul */
+    padding: 10px 50px; /* Alineado con el encabezado azul */
     position: relative;
     left: 0;
     overflow: hidden;
@@ -157,10 +140,48 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+}
 
-  /* Estilo para el pie de página en versión móvil */
-  footer {
-    padding: 10px 0; /* Agregamos espacio superior e inferior */
-    text-align: center; /* Alinea el texto al centro */
+/* Estilos para el encabezado gris en versión de escritorio */
+@media screen and (min-width: 769px) {
+  .gray-header {
+    background-color: #333;
+    color: white;
+    padding: 10px 50px; /* Alineado con el encabezado azul */
+    position: relative;
+    left: 0;
+    overflow: hidden;
   }
+
+  /* Alineación centrada para los textos en la versión de escritorio */
+  .centered-text {
+    text-align: center;
+  }
+
+  /* Recuadro para la descripción sobre nosotros en versión de escritorio */
+  .about-info {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 800px;
+  }
+
+  /* Estilo para la imagen del logotipo en versión de escritorio */
+  .logo-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Estilos para los textos de abajo */
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #333;
 }
