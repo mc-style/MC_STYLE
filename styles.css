@@ -107,7 +107,7 @@ nav ul li a:hover {
     width: 100%;
   }
 
-  /* Estilos para el encabezado gris en dispositivos móviles */
+  /* Estilo para el encabezado gris en dispositivos móviles */
   .gray-header {
     background-color: #333;
     color: white;
@@ -122,32 +122,6 @@ nav ul li a:hover {
     text-align: center;
   }
 
-  /* Recuadro para la descripción sobre nosotros en versión móvil */
-  .about-info {
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-  }
-
-  /* Recuadro para la sección de contacto en versión móvil */
-  .contact-box {
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-  }
-
-  /* Estilo para el texto en la sección de contacto en versión móvil */
-  .contact-text {
-    max-width: 600px; /* Ajusta el ancho máximo según tus preferencias */
-    margin: 0 auto;
-  }
-
   /* Estilo para la imagen del logotipo en versión móvil */
   .logo-image {
     display: block;
@@ -157,7 +131,7 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  /* Estilo para el botón de descarga */
+  /* Estilo para el botón de descarga en versión móvil */
   .download-button {
     display: block;
     background-color: #252850;
@@ -189,54 +163,6 @@ nav ul li a:hover {
   /* Alineación centrada para los textos en la versión de escritorio */
   .centered-text {
     text-align: center;
-  }
-
-  /* Recuadro para la descripción sobre nosotros en versión de escritorio */
-  .about-info {
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    max-width: 800px;
-  }
-
-  /* Recuadro para la sección de contacto en versión de escritorio */
-  .contact-box {
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
-  }
-
-  /* Estilo para la imagen del logotipo en versión de escritorio */
-  .logo-image {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Estilo para el botón de descarga */
-  .download-button {
-    display: block;
-    background-color: #252850;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 20px auto;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-
-  .download-button:hover {
-    background-color: #1e1f36;
   }
 }
 
