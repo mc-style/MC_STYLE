@@ -107,7 +107,7 @@ nav ul li a:hover {
     width: 100%;
   }
 
-  /* Estilo para el encabezado gris en dispositivos móviles */
+  /* Estilos para el encabezado gris en dispositivos móviles */
   .gray-header {
     background-color: #333;
     color: white;
@@ -168,7 +168,7 @@ nav ul li a:hover {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    text-align: center;
+    text-align: center; /* Centra el texto del botón */
   }
 
   .download-button:hover {
@@ -225,7 +225,7 @@ nav ul li a:hover {
 
   /* Estilo para el botón de descarga */
   .download-button {
-    display: inline-block;
+    display: block;
     background-color: #252850;
     color: white;
     text-decoration: none;
@@ -234,7 +234,7 @@ nav ul li a:hover {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    text-align: center;
+    text-align: center; /* Centra el texto del botón */
   }
 
   .download-button:hover {
