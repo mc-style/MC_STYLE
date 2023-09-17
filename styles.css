@@ -142,7 +142,22 @@ nav ul li a:hover {
     border-radius: 5px;
   }
 
-  /* Estilo para el botón de descarga en dispositivos móviles */
+  /* Estilo para el texto en la sección de contacto en versión móvil */
+  .contact-text {
+    max-width: 600px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto;
+  }
+
+  /* Estilo para la imagen del logotipo en versión móvil */
+  .logo-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilo para el botón de descarga */
   .download-button {
     display: inline-block; /* Cambiado a inline-block */
     background-color: #252850;
@@ -199,7 +214,16 @@ nav ul li a:hover {
     max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
   }
 
-  /* Estilo para el botón de descarga en versión de escritorio */
+  /* Estilo para la imagen del logotipo en versión de escritorio */
+  .logo-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilo para el botón de descarga */
   .download-button {
     display: inline-block; /* Cambiado a inline-block */
     background-color: #252850;
