@@ -157,9 +157,9 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  /* Estilo para el botón de descarga */
+  /* Estilo para el botón de descarga en dispositivos móviles */
   .download-button {
-    display: inline-block; /* Cambiado a inline-block */
+    display: block;
     background-color: #252850;
     color: white;
     text-decoration: none;
@@ -223,9 +223,9 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  /* Estilo para el botón de descarga */
+  /* Estilo para el botón de descarga en versión de escritorio */
   .download-button {
-    display: inline-block; /* Cambiado a inline-block */
+    display: block;
     background-color: #252850;
     color: white;
     text-decoration: none;
