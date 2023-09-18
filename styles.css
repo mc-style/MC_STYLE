@@ -160,11 +160,11 @@ nav ul li a:hover {
   /* Estilo para el botón de descarga en versión móvil */
   .download-container {
     text-align: center;
-    margin-top: 10px; /* Cambiado a un valor más pequeño para mover el botón hacia arriba */
+    margin-top: 20px; /* Aumentado para separar el botón del encabezado gris */
   }
 
   .download-button {
-    display: inline-block; /* Cambiado a inline-block */
+    display: inline-block;
     background-color: #252850;
     color: white;
     text-decoration: none;
@@ -173,7 +173,6 @@ nav ul li a:hover {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    text-align: center; /* Centra el texto del botón */
   }
 
   .download-button:hover {
@@ -231,11 +230,11 @@ nav ul li a:hover {
   /* Estilo para el botón de descarga en versión de escritorio */
   .download-container {
     text-align: center;
-    margin-top: 10px; /* Cambiado a un valor más pequeño para mover el botón hacia arriba */
+    margin-top: 20px; /* Aumentado para separar el botón del encabezado gris */
   }
 
   .download-button {
-    display: inline-block; /* Cambiado a inline-block */
+    display: inline-block;
     background-color: #252850;
     color: white;
     text-decoration: none;
@@ -244,7 +243,6 @@ nav ul li a:hover {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    text-align: center; /* Centra el texto del botón */
   }
 
   .download-button:hover {
