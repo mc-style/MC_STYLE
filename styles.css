@@ -21,6 +21,7 @@ header {
   padding: 10px 50px;
   position: relative;
   z-index: 1;
+  margin-bottom: 20px; /* Añadido margen inferior para separar del contenido */
 }
 
 nav ul {
@@ -115,6 +116,7 @@ nav ul li a:hover {
     position: relative;
     left: 0;
     overflow: hidden;
+    margin-top: 20px; /* Añadido margen superior para separar del contenido */
   }
 
   /* Alineación centrada para los textos en dispositivos móviles */
@@ -189,6 +191,7 @@ nav ul li a:hover {
     position: relative;
     left: 0;
     overflow: hidden;
+    margin-top: 20px; /* Añadido margen superior para separar del contenido */
   }
 
   /* Alineación centrada para los textos en la versión de escritorio */
