@@ -160,7 +160,7 @@ nav ul li a:hover {
   /* Estilo para el botón de descarga en versión móvil */
   .download-container {
     text-align: center;
-    margin-top: 20px; /* Aumentado para separar el botón del encabezado gris */
+    margin-top: 30px; /* Aumentado para centrar más el botón */
   }
 
   .download-button {
@@ -230,7 +230,7 @@ nav ul li a:hover {
   /* Estilo para el botón de descarga en versión de escritorio */
   .download-container {
     text-align: center;
-    margin-top: 20px; /* Aumentado para separar el botón del encabezado gris */
+    margin-top: 30px; /* Aumentado para centrar más el botón */
   }
 
   .download-button {
